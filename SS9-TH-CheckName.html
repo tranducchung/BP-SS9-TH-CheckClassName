@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>VHTM</title>
+</head>
+<body>
+<script>
+    function checkName(str) {
+        let regexp = /^[CAP][0-9]{4}[GHIKLM]$/;
+        return regexp.test(str)
+    }
+    let str = prompt("Input className");
+    let result = checkName(str);
+    if(result===true){
+        alert("Class name Invalid")
+    }else {alert("Class name unInvalid")}
+</script>
+</body>
+</html>
